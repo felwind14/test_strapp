@@ -38,5 +38,4 @@ st.map(filtered_data)
 
 
 #adding an image
-image = 'https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif'
-st.image(image, caption="Sunrise mountains") 
+st.image('https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif', caption="Sunrise mountains") 
