@@ -16,11 +16,11 @@ def load_data(nrows):
     data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
     return data
 
-data_load_state = st.text('Loading data...')
+data_load_state = st.text('Loading data...') #first text displayed until data gets loaded
 data = load_data(10000)
 data_load_state.text("Done! (using st.cache_data)")
 
-if st.checkbox('Show raw data'):
+if st.checkbox('Show raw data'):  #similar to ipywidgets
     st.subheader('Raw data')
     st.write(data)
 
